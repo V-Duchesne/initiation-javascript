@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemple 01</title>
+    <script>
+        //je crée une fonction qui va définir un code js sur mes balises hyperliens
+        function defineLinks()
+            {
+                const links = document.getElementsByTagName("a");
+                for (var i=0; i<links.length; i++){
+                    links.item(i).onclick = function() { return confirm('êtes-vous sûr ?');};
+                }
+
+            }
+
+            const nom = "Vilain";
+            const prénom = "Guy";
+    </script>
+</head>
+<body onload="defineLinks()">
+    <p>Visitez le site du <a href="http://www.lesoir.be/">journal le soir</a>.</p>
+</body>
+</html>
