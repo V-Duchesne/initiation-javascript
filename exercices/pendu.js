@@ -14,6 +14,8 @@ let choix;
 
 pendu();
 function pendu(){
+    let portrait = document.getElementById('pendu');
+    portrait.src = '../img/pendu010.png';
     lettreTrouvée = [];
     faux = 10;
     do{
