@@ -163,7 +163,7 @@ function game(){
                 <img src='${urlImage}' alt='url image' />
             </div>
         </div>`;
-        checkTableau();
+        setTimeout(checkTableau,200);
     }
     //Je démarre ma partie en tirant un nombre au hasard
 }
